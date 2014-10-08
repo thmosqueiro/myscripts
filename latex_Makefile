@@ -1,0 +1,35 @@
+#
+# Simple Makefile for LaTeX projects
+# Suggestions (pull requests) are welcome!!
+#
+# cc thmosqueiro @ v2014
+# https://github.com/thmosqueiro/myscripts
+#
+
+latex:
+	latex $(f).tex
+	latex $(f).tex
+	dvi2ps latex $(f).dvi
+	ps2pdf latex $(f).ps
+
+bibtex:
+	bibtex $(f).aux
+
+pdf:
+	pdflatex $(f).tex
+
+
+
+all:
+	pdflatex $(f).tex
+	pdflatex $(f).tex
+	make bibtex $(f).aux
+	pdflatex $(f).tex
+	pdflatex $(f).tex
+
+
+cleanoutput:
+	rm -v -f *.aux *.toc *.log *.out $(f).pdf $(f).ps $(f).dvi
+
+clean:
+	rm -v -f *.aux *.toc *.log *.out
