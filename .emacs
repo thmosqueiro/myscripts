@@ -9,9 +9,6 @@
   (interactive)
   (if window-system
   (progn
-    ;; use 120 char wide window for largeish displays
-    ;; and smaller 80 column windows for smaller displays
-    ;; pick whatever numbers make sense for you
     (add-to-list 'default-frame-alist (cons 'width 90))
     (add-to-list 'default-frame-alist (cons 'height 45))
     )))
