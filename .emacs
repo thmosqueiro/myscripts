@@ -1,3 +1,10 @@
+;; 
+;; my current .emacs file
+;; 
+;; 
+;; cc thmosqueiro @ v2014
+;; https://github.com/thmosqueiro/myscripts
+;; 
 
 ;; Setting the font
 (custom-set-faces
