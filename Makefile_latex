@@ -1,7 +1,17 @@
 #
 # Simple Makefile for LaTeX projects
 # Suggestions (pull requests) are welcome!!
+# 
+# 
+# Simple example: suppose you want to compile the file paper.tex, then run
 #
+# make f=paper
+# 
+# Remember to drop the file extension (.tex, .aux, etc).
+# This will compile with pdflatex, then use bibtex, and recompile-it with
+# pdflatex. You can also set $f=paper in the beginning of the script if
+# you don't wat to keep writing f=paper.
+# 
 # cc thmosqueiro @ v2014
 # https://github.com/thmosqueiro/myscripts
 #
