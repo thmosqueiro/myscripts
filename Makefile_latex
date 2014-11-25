@@ -16,6 +16,16 @@
 # https://github.com/thmosqueiro/myscripts
 #
 
+
+all:
+	pdflatex $(f).tex
+	pdflatex $(f).tex
+	bibtex $(f).aux
+	pdflatex $(f).tex
+	pdflatex $(f).tex
+
+
+
 latex:
 	latex $(f).tex
 	latex $(f).tex
@@ -26,15 +36,6 @@ bibtex:
 	bibtex $(f).aux
 
 pdf:
-	pdflatex $(f).tex
-
-
-
-all:
-	pdflatex $(f).tex
-	pdflatex $(f).tex
-	make bibtex $(f).aux
-	pdflatex $(f).tex
 	pdflatex $(f).tex
 
 
