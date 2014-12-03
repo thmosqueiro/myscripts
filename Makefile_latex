@@ -24,7 +24,8 @@ all:
 	pdflatex $(f).tex
 	pdflatex $(f).tex
 
-
+xela:
+	xelatex $(f).tex
 
 latex:
 	latex $(f).tex
