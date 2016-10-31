@@ -21,6 +21,8 @@
     )))
 (set-frame-size-according-to-resolution) 
 
+;; Hiding the tool bar
+(tool-bar-mode -1)
 
 ;; color theme
 (custom-set-variables
